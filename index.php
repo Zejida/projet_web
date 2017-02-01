@@ -1,3 +1,4 @@
+<?php include ("/data/d_index.php");?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,16 +15,21 @@
 		<?php include ("header.php"); ?>
 		</header>
 		<main>
-			<article>
-    				<header>
-    				</header>
-    				<section>
-        			<p>...</p>
-    				</section>
-    				<footer>
-   					</footer>
-			</article>
-		</main>
+			<?php foreach ($articles as $article) : ?>
+			<div class="grid grid-pad">
+    			<div class="col-9-12">
+    				<article class="articles">
+    					<header>
+                        <h<?php echo $i; ?>><?php echo $article['title']; ?></h<?php echo $i; ?>>
+                    	</header>
+                    	<section>
+                    	<p><?php echo $article['description'], $article['date'] , $article['auteur'] ; $i+=1; ?></p>
+                    	</section>
+                	</article>
+            	</div>
+            </div>
+        	<?php endforeach; ?>
+        </main>
 		<footer>
 		</footer>
 	</body>
