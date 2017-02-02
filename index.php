@@ -5,6 +5,7 @@
 		<link rel="icon" type="image/png" href="img\favicon\fav1.png"/>
 		<link rel="stylesheet" href="assets/simplegrid.css"/>
 		<link rel="stylesheet" href="assets/reset-css.css"/>
+		<link rel="stylesheet" href="assets/style.css"/>
 		<title>La Halle au Frais</title>
 		<meta charset="UTF-8" />
 		<meta name="description" content="La Halle au Frais">
@@ -17,24 +18,24 @@
 		<main>
 			<div class="grid grid-pad">
 				<div class="col-3-12">
-    				<article class="left">
+    				<article>
     					<?php foreach ($arr_index_left as $cat1) : ?>
-    						<header>
+    						<header class="header_left">
     						<h<?php echo $i; ?>><?php echo $cat1['title']; ?></h<?php echo $i; ?>>
                     		</header>
-                    		<section>
+                    		<section class="section_left">
                     		<p><?php echo $cat1['description'], $cat1['date'] , $cat1['auteur'] ; ?></p>
                     		</section>
                     	<?php endforeach; ?>
                 	</article>
             	</div>
     			<div class="col-9-12">
-    				<article class="articles">
+    				<article>
     					<?php foreach ($arr_index_art as $cat2) : ?>
-    						<header>
+    						<header class="header_art">
                         	<h<?php echo $i; ?>><?php echo $cat2['title']; ?></h<?php echo $i; ?>>
                     		</header>
-                    		<section>
+                    		<section class="section_art">
                     		<p><?php echo  $cat2['description'], $cat2['date'] , $cat2['auteur'] ; ?></p>
                     		</section>
                     	<?php endforeach; ?>
