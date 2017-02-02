@@ -15,20 +15,31 @@
 		<?php include ("header.php"); ?>
 		</header>
 		<main>
-			<?php foreach ($articles as $article) : ?>
 			<div class="grid grid-pad">
+				<div class="col-3-12">
+    				<article class="left">
+    					<?php foreach ($arr_index_left as $cat1) : ?>
+    						<header>
+                    		</header>
+                    		<section>
+                    		<p><?php echo $cat1['description'], $cat1['date'] , $cat1['auteur'] ; ?></p>
+                    		</section>
+                    	<?php endforeach; ?>
+                	</article>
+            	</div>
     			<div class="col-9-12">
     				<article class="articles">
-    					<header>
-                        <h<?php echo $i; ?>><?php echo $article['title']; ?></h<?php echo $i; ?>>
-                    	</header>
-                    	<section>
-                    	<p><?php echo $article['description'], $article['date'] , $article['auteur'] ; $i+=1; ?></p>
-                    	</section>
+    					<?php foreach ($arr_index_art as $cat2) : ?>
+    						<header>
+                        	<h<?php echo $i; ?>><?php echo $cat2['title']; ?></h<?php echo $i; ?>>
+                    		</header>
+                    		<section>
+                    		<p><?php echo  $cat2['description'], $cat2['date'] , $cat2['auteur'] ; ?></p>
+                    		</section>
+                    	<?php endforeach; ?>
                 	</article>
             	</div>
             </div>
-        	<?php endforeach; ?>
         </main>
 		<footer>
 		</footer>
