@@ -3,13 +3,13 @@
 
     $art1 = array(
         'title' => 'Lorem ipsum dolor sit amet.',
-        'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque distinctio totam quasi soluta vel saepe, neque odio excepturi ipsa rerum, animi unde fugit sed, nostrum corporis facere earum amet!',
+        'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, qui. Enim eligendi aspernatur molestiae quaerat sit architecto nobis alias eaque quasi impedit, laborum illo accusantium, ad magni culpa. Eveniet ipsum corporis voluptatum animi totam necessitatibus officiis iusto architecto, consequuntur sit! Molestias nobis eligendi, laudantium eveniet tempore aut repellendus expedita eaque?',
         'date' => '',
         'auteur' => '',
         );
     $art2 = array(
         'title' => 'Lorem ipsum dolor sit.',
-        'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum autem, perspiciatis tempore.',
+        'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident et aut deleniti quasi debitis dolore itaque esse quidem accusamus illo assumenda architecto, laboriosam? Tenetur consequuntur cupiditate veritatis accusamus incidunt nihil quidem provident nulla ad in tempore labore atque ex, nesciunt. Laborum porro, quibusdam, perspiciatis consequuntur officia reprehenderit iure enim magnam, consequatur aperiam vitae reiciendis, quod animi? Qui enim sed, unde. ipsum dolor sit amet, consectetur adipisicing elit. Dolorum autem, perspiciatis tempore.',
         'date' => '',
         'auteur' => '',
         );

@@ -20,6 +20,7 @@
     				<article class="left">
     					<?php foreach ($arr_index_left as $cat1) : ?>
     						<header>
+    						<h<?php echo $i; ?>><?php echo $cat1['title']; ?></h<?php echo $i; ?>>
                     		</header>
                     		<section>
                     		<p><?php echo $cat1['description'], $cat1['date'] , $cat1['auteur'] ; ?></p>
@@ -42,6 +43,7 @@
             </div>
         </main>
 		<footer>
+			<?php include ("footer.php"); ?>
 		</footer>
 	</body>
 </html>
