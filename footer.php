@@ -1,10 +1,16 @@
-		<div class="grid grid-pad">
-			<div class="footer_top">
+		<div class="grid grid-pad footer_top">
 				<div class="col-1-4 ">
 					<div class="content">
-						<p id="address">Centre Commercial Les Halles</p>
-						<p id="address">22 B rue du Général Leclerc</p>
-						<p id="address">80000 Amiens</p>	
+						<p>La Halle au frais</p>
+						<p>Centre Commercial Les Halles</p>
+						<p>22 B rue du Général Leclerc</p>
+						<p>80000 Amiens</p>						
+						<p> </p>
+						<p>Horaires</p>
+						<p>Du mardi au samedi de 9h à 13h</p>
+						<p>et de 15h à 19h</p>
+						<p>Du mardi au samedi de 9h à 13h</p>
+						<p>et le dimanche de 9h à 12h30</p>	
 					</div>
 				</div>
 				<div class="col-1-4">
@@ -22,7 +28,6 @@
 				</div>
 				<div class="col-1-4p">
 					<div class="content">
-						<img class="imgfooter2" src="http://www.taklope.com//img/cms/logo-paiement.png" alt="logo paiement" title="CB, Visa, MASTERCARD, PayPal"/>
 						<img class="imgfooter2" src="img/tempo/avis.png" alt="avis_verifié"/>					
 					</div>
 				</div>
