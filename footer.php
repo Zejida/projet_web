@@ -22,7 +22,7 @@
 				<div class="col-1-4">
 					<div class="content">
 						<a href="cvg.pdf" target="_blank">
-							<img class="imgfooter" class="cvg" src="img/tempo/cvg.gif" alt="logo_cvg" title="CVG"/>
+							<img class="imgfooter" class="cvg" src="img/tempo/fb.png" alt="Rejoignez nous " title="Rejoignez nous"/>
 						</a>					
 					</div>
 				</div>
