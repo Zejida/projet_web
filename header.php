@@ -2,7 +2,7 @@
     <div class="col-1-1">
         <div class="content">
         <a href="">
-        	<img src="img\banner\ban2.png" alt="Baniére" title="La Halle au Frais"/>
+        	<img src="img\banner\ban3.png" alt="Baniére" title="La Halle au Frais"/>
         </a>
         </div>
     </div>
