@@ -1,0 +1,175 @@
+body{
+	background-color: #333430;
+}
+
+#menu {
+	height: 300px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#menu li {
+	float: left;
+	margin: auto;
+	padding: 0;
+	background-color: black;
+}
+
+#menu li a {
+	display: block;
+	width: 220px;
+	color: #B0E13F;
+	text-decoration: none;
+	padding: 10px;
+}
+
+#menu li a:hover {
+	color: #78972F;
+}
+
+#menu ul li ul {
+	display: none;
+}
+
+#menu ul li:hover ul {
+	display: block;
+}
+
+#menu li:hover ul li {
+	float: none;
+}
+
+#menu li ul {
+	position:absolute;
+}
+ 
+#slideshow {  
+    position: relative;  
+    width: 700px;  
+    height: 340px;  
+    padding: 15px;  
+    margin: 0 auto 2em;  
+    border: 1px solid #ddd;  
+    background: #FFF;  
+    border-radius: 2px 2px 2px 2px;  
+    box-shadow: 0 0 3px rgba(0,0,0, 0.2);  
+}  
+       
+#slideshow:before,  
+#slideshow:after {  
+    position: absolute;  
+    bottom:14px;  
+    z-index: -10;  
+    width: 50%;  
+    height: 20px;  
+    content: " ";  
+    background: rgba(0,0,0,0.1);  
+    border-radius: 50%;  
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);  
+}  
+
+#slideshow:before {  
+    left:0;  
+    -webkit-transform: rotate(-4deg);  
+    -moz-transform: rotate(-4deg);  
+    transform: rotate(-4deg);  
+}  
+
+#slideshow:after {  
+    right:0;  
+    -webkit-transform: rotate(4deg);  
+    -moz-transform: rotate(4deg);  
+    transform: rotate(4deg);  
+} 
+	
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position:relative;
+	width: 700px;
+	height: 340px;
+	overflow: hidden;
+ }
+	
+/* le conteneur des slides en largeur */
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 400%;
+	height: 200px;
+}
+	
+/* annulation des marges sur figure */
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+		
+/* styles de nos légendes */
+#slideshow figcaption {
+	position:absolute;
+	padding: 20px 20px;
+	margin:0;
+	left:0;
+	right:0;
+	bottom: 5px;
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #fff;
+	background: rgba(255,255,255,0.7);
+	border-top: 1px solid rgb(225,225,225);
+	color: #555;
+}
+
+@-moz-keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+	
+#slideshow .slider {
+	-moz-animation: slider 10s infinite;
+	animation: slider 10s infinite;
+} 
+		 
+.footer_top{
+	color: #FFF;
+	background-color: #000;	
+}
+
+footer img{
+	padding-left: 2em;
+	max-width: 130px		
+}
+
+#copyright {
+	text-align: center;
+}   
+
+
+
