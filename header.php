@@ -1,40 +1,41 @@
-<div class="grid grid-pad">
-    <div class="col-1-1">
-        <div class="content">
-        <a href="">
-        	<img src="img\banner\ban3.png" alt="Baniére" title="La Halle au Frais"/>
-        </a>
-        </div>
-    </div>
-</div>
-<div class="grid grid-pad">
-	<nav>
-		<ul>
-			<div class="col-1-6 menu">
-				<div class="content">
-				<li><a href="index.php" title="Accueil">Accueil</a></li>
-				</div>
+<?php
+	include ("/data/data.php");
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/simplegrid.css"/>
+		<link rel="stylesheet" href="assets/reset-css.css"/>
+		<link rel="stylesheet" href="assets/style.css"/>
+	</head>
+	
+	<body>
+		<header>
+			<div id="menu"> <!-- menu déroulant -->
+				<ul>
+				<img src="img/logo.png" alt="" width="120" height="120"/>
+					<li><a href="index.php">Accueil</a></li>
+					<li><a href="prod.php">Commerçants</a>
+						<ul>
+						<?php foreach ($arr_articles as $cle => $element): ?>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Rotissiers</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Bouchers</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Poissoniers</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Primeurs</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Epiciers</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Boulangers</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Fromagers</a></li>
+							<li><a href="news.php?cle=<?php echo $cle; ?>">Cavistes</a></li>
+						<?php endforeach ?>
+						</ul>
+					</li>
+					<li><a href="actu.php">Actualités et Événements</a></li>
+					<li><a href="qui.php">Informations pratiques</a></li>
+					<li><a href="contact.php">Nous contacter</a></li>
+				</ul>
 			</div>
-			<div class="col-1-6 menu">
-				<div class="content">
-				<li><a href="#" title="Qui sommes-nous ?">Qui sommes-nous</a></li>
-				</div>
-			</div>
-			<div class="col-1-6 menu">
-				<div class="content">
-				<li><a href="#" title="Actualités">Actualités</a></li>
-				</div>
-			</div>
-			<div class="col-1-6 menu">
-				<div class="content">
-					<li><a href="#" title="Producteurs">Producteurs	</a></li>
-				</div>
-			</div>
-			<div class="col-1-6 menu">
-				<div class="content">
-				<li><a href="#" title="Contacts">Contacts</a></li>
-				</div>
-			</div>
-		</ul>
-	</nav>
-</div>
+		</header>
+	</body>
+</html>
