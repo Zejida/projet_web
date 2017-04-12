@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Administrateur</title>
+	</head>
+
+	<body>
+		<p>
+			<?php
+				if(!empty($_POST['choix'])) {
+					if($_POST['choix'] == 'choix1'){
+						if(!empty($_POST['name1']) && !empty($_POST['prenom']) && !empty($_POST['name2']) && !empty($_POST['tel']) && !empty($_POST['email']) && !empty($_POST['adresse']) && !empty($_POST['url'])) {
+							echo 'Les informations ont bien été mis à jour dans la base de données.';
+						} 
+						else {
+							echo 'Veuillez remplir les champs.';
+						}
+					}
+					elseif ($_POST['choix'] == 'choix2') {
+						if(!empty($_POST['name2'])) {
+							echo 'Le commerce a bien été supprimé de la base de données';
+						}	
+					}
+					elseif ($_POST['choix'] == 'choix3') {
+						if(!empty($_POST['title']) && !empty($_POST['url2']) && !empty($_POST['date1']) && !empty($_POST['place']) && !empty($_POST['date2']) && !empty($_POST['url3']) && !empty($_POST['body'])) {
+							echo 'Les informations ont bien été mis à jour dans la base de données.' ;
+						}
+						else {
+							echo 'Veuillez remplir les champs.';
+						}
+					}
+					else {
+						if(!empty($_POST['title'])) {
+							echo 'Les évènements ont bien été supprimé de la base de données.';
+						}
+					}
+				}
+			?>
+		</p>
+	</body>
+</html>
